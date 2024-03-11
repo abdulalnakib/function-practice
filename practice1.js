@@ -2,8 +2,9 @@
 
 // function foo() {
 //     console.log('foo')
+//     bar();
 // }
-// bar();
+
 // foo();
 
 // function bar() {
@@ -23,8 +24,15 @@
 // totalAverage = make_avg(25, 52, 80);
 // console.log(totalAverage)
 
+
+function make_avg(num1, num2, num3) {
+    var total = num1 + num2 + num3;
+    var avg = total / 3
+    return avg;
+}
+console.log(make_avg(25, 52, 80));
+
 // Write a function called make_avg() which will take an array of integers and the size of that array and return the average of those values
 
-function make_avg(a, b, c, d, e, f, g) {
-    console.log()
-}
+
+
