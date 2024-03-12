@@ -118,3 +118,32 @@
 // const numbers = 12;
 // const total = factorial(numbers);
 // console.log(total)
+// ------------------------------------------------------
+// Hours to mins
+// -----------------------------------------
+// function findMin(hour) {
+//     const value = hour * 60;
+//     console.log(value);
+// }
+
+// const hours = 24;
+// findMin(hours)
+// ------------------------------------------------------------------
+// Write a function findLeapYear() that will take the arrray below and will check if each year is a leap year.
+// if there is  leap years in the array put them in a different array and show that array as an result
+// -----------------------------------------------------------------------
+// // function findLeapYear(year) {
+//     let leapYears = [];
+//     for (let i = 0; i < year.length; i++) {
+//         const index = i;
+//         const elements = year[index];
+//         if (elements % 4 === 0 && elements % 4 !== 400) {
+//             leapYears.push(elements);
+//         }
+//     }
+//     return leapYears;
+// }
+
+// const years = [2023, 2024, 2025, 2028, 2030];
+// const thisIsLeapYears = findLeapYear(years);
+// console.log(thisIsLeapYears);
