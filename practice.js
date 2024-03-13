@@ -219,3 +219,22 @@
 // const values = [65, 9, 123];
 // const minNumber = findMin(values);
 // console.log(minNumber, 'is the smallest number');
+
+// find the lowest number in an array easier version
+
+// function lowestNum(numbers) {
+//     let lowest = numbers[0];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const elements = numbers[index]
+//         if (elements < lowest) {
+//             lowest = elements
+//         }
+//     }
+//     return lowest;
+
+// }
+
+// const numbers = [167, 190, 120, 165, 137];
+// const lowNum = lowestNum(numbers);
+// console.log(lowNum);
