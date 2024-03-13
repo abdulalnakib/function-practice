@@ -129,10 +129,10 @@
 // const hours = 24;
 // findMin(hours)
 // ------------------------------------------------------------------
-// Write a function findLeapYear() that will take the arrray below and will check if each year is a leap year.
+// Write a function findLeapYear() that will take the array below and will check if each year is a leap year.
 // if there is  leap years in the array put them in a different array and show that array as an result
 // -----------------------------------------------------------------------
-// // function findLeapYear(year) {
+// function findLeapYear(year) {
 //     let leapYears = [];
 //     for (let i = 0; i < year.length; i++) {
 //         const index = i;
@@ -147,3 +147,75 @@
 // const years = [2023, 2024, 2025, 2028, 2030];
 // const thisIsLeapYears = findLeapYear(years);
 // console.log(thisIsLeapYears);
+// ----------------------------------------------------------------
+// Find the max number from the three numbers below with function and if-else
+// ------------------------------------------------------------------
+// Max number with if-else
+
+// function findMax(numbers) {
+
+//     for (let i = 0; i < 1; i++) {
+//         const index = i;
+//         // console.log(index);
+//         const elements = numbers[index];
+//         // console.log(elements);
+//         if (numbers[0] > numbers[2] && numbers[0] < numbers[1]) {
+//             console.log(numbers[0], 'is the biggest number');
+//         }
+//         else if (numbers[1] < numbers[0] && numbers[1] < numbers[2]) {
+//             console.log(numbers[1], 'is the biggest number');
+//         }
+//         else {
+//             console.log(numbers[2], 'is the biggest number');
+//         }
+//     }
+// }
+
+
+// const values = [23, 89, 69];
+// findMax(values);
+
+// Max number with Math.max in an function using spread syntax that i didn't kno '...'
+
+// function findMax(numbers) {
+//     return Math.max(...numbers);
+// }
+
+// const numbers = [25, 999, 332];
+// const maxNumber = findMax(numbers);
+// console.log(maxNumber);
+
+// Min number with if-else
+
+// function findMin(numbers) {
+
+//     for (let i = 0; i < 1; i++) {
+//         const index = i;
+//         // console.log(index);
+//         const elements = numbers[index];
+//         // console.log(elements);
+//         if (numbers[0] < numbers[2] && numbers[0] < numbers[1]) {
+//             console.log(numbers[0], 'is the smallest number');
+//         }
+//         else if (numbers[1] < numbers[0] && numbers[1] < numbers[2]) {
+//             console.log(numbers[1], 'is the smallest number');
+//         }
+//         else {
+//             console.log(numbers[2], 'is the smallest number');
+//         }
+//     }
+// }
+
+
+// const values = [6, 8459, 69];
+// findMin(values);
+
+// Min number with Math.min
+
+// function findMin(numbers) {
+//     return Math.min(...numbers);
+// }
+
+// const values = [65, 9, 123];
+// const minNumber = findMin(values);
+// console.log(minNumber, 'is the smallest number');
