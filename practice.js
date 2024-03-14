@@ -238,3 +238,94 @@
 // const numbers = [167, 190, 120, 165, 137];
 // const lowNum = lowestNum(numbers);
 // console.log(lowNum);
+// ------------------------------------------------------
+// Find the sum of the shopping
+// --------------------------------------------------
+// const shoppingCart = [
+//     { name: 'shoe', price: 1200 },
+//     { name: 'shirt', price: 2200 },
+//     { name: 'pant', price: 3700 },
+//     { name: 'belt', price: 600 },
+// ]
+
+// function shoppingCost(shoppingCart) {
+//     let cart = 0;
+//     for (let i = 0; i < shoppingCart.length; i++) {
+//         const items = shoppingCart[i];
+//         cart = items.price + cart;
+//     }
+//     return cart;
+// }
+
+// const totalSum = shoppingCost(shoppingCart);
+// console.log(totalSum);
+// -----------------------------------
+// Centimeter to Meter
+// ------------------------------------
+// function centimeterToMeter(centimeter) {
+//     const meter = centimeter / 100;
+//     return meter;
+// }
+
+// const meter = centimeterToMeter(10000);
+// console.log(meter);
+
+// ----------------------------------------------------
+// Count paper
+// book1 -> 100
+// book2 -> 200
+// book3 -> 300
+// Find the total number of pages needed for each book
+// -------------------------------------------------
+// function paperRequirements(book1, book2, book3) {
+//     const book1Papers = book1 * 100;
+//     const book2Papers = book2 * 200;
+//     const book3Papers = book3 * 300;
+//     const total = book1Papers + book2Papers + book3Papers;
+//     return total;
+// }
+// const book1 = 1;
+// const book2 = 2;
+// const book3 = 3;
+// const totalPapers = paperRequirements(book1, book2, book3);
+// console.log(totalPapers);
+
+// ------------------------------------
+// An array of names is given ['Nakib', 'Abdul', 'al', 'Abdul al nakib', 'Numan'] and now find the biggest names in the array and return it
+// ----------------------------------------------
+// function bestFriends(names) {
+//     let currentName = [];
+//     for (let i = 0; i < names.length; i++) {
+//         const name = names[i];
+//         if (name.length > currentName.length) {
+//             currentName = name;
+//         }
+//     }
+//     return currentName;
+// }
+
+// const names = ['Nakib', 'Abdul', 'al', 'Abdul al nakib', 'Numan'];
+// const bigName = bestFriends(names);
+// console.log(bigName);
+
+
+// --------------------------------------------
+// You're given a array containing positive and negative numbers [45, 87, 96, 11, 63, -56, 71, 28] make a function where the loop stop as soon as it gets a negative number and puts all the positive numbers before it in an new array
+// -----------------------------------------------------
+function onlyPositive(numbers) {
+    let positiveNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element >= 0) {
+            positiveNumbers.push(element);
+        }
+        else if (element < 0) {
+            break;
+        }
+    }
+    return positiveNumbers
+}
+
+const numbers = [45, 87, 96, 11, 63, -56, 71, 28];
+const positive = onlyPositive(numbers);
+console.log(positive);
