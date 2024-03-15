@@ -312,20 +312,20 @@
 // --------------------------------------------
 // You're given a array containing positive and negative numbers [45, 87, 96, 11, 63, -56, 71, 28] make a function where the loop stop as soon as it gets a negative number and puts all the positive numbers before it in an new array
 // -----------------------------------------------------
-function onlyPositive(numbers) {
-    let positiveNumbers = [];
-    for (let i = 0; i < numbers.length; i++) {
-        const element = numbers[i];
-        if (element >= 0) {
-            positiveNumbers.push(element);
-        }
-        else if (element < 0) {
-            break;
-        }
-    }
-    return positiveNumbers
-}
+// function onlyPositive(numbers) {
+//     let positiveNumbers = [];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const element = numbers[i];
+//         if (element >= 0) {
+//             positiveNumbers.push(element);
+//         }
+//         else if (element < 0) {
+//             break;
+//         }
+//     }
+//     return positiveNumbers
+// }
 
-const numbers = [45, 87, 96, 11, 63, -56, 71, 28];
-const positive = onlyPositive(numbers);
-console.log(positive);
+// const numbers = [45, 87, 96, 11, 63, -56, 71, 28];
+// const positive = onlyPositive(numbers);
+// console.log(positive);
